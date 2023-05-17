@@ -3,8 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-const MovieCard = (curElem) => {
+const MovieCard =async (curElem) => {
     const {id,type, title, synopsis} = curElem.jawSummary
+    await new Promise(resolve => setTimeout(resolve, 2000));
   return (
     <>
     <div className={styles.card}>
