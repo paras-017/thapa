@@ -4,7 +4,6 @@ const loading = () => {
   return (
   <section className={styles.loading_section}>
     <div className={styles.loading}>
-
     </div>
   </section>
   )
