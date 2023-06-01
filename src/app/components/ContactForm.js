@@ -38,12 +38,7 @@ const ContactForm = () => {
     })
 // Set the status based on the contact from the API route
     if(response.status === 200){
-      setUser({
-        username:"",
-        email:"",
-        phone:"",
-        message:"",
-      })
+      setUser({username:"",email:"",phone:"",message:"",})
       setStatus('success')
      }else{
       setStatus('error')
